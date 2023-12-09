@@ -1,0 +1,3 @@
+.myconsole.card {
+  @apply border rounded-lg;
+}
