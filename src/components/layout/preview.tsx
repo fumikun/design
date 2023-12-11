@@ -8,6 +8,7 @@ type PreviwBoxProps = {
 
 type CodeBoxProps = {
     code: string
+    fileName?: string;
     className?: string;
 }
 export const PreviwBox = ({ children, className }: PreviwBoxProps) => {
@@ -20,18 +21,23 @@ export const PreviwBox = ({ children, className }: PreviwBoxProps) => {
     )
 }
 
-export const CodeBox = ({ code, className }: CodeBoxProps) => {
+export const CodeBox = ({ code, fileName, className }: CodeBoxProps) => {
     return (
-        <div className={"rounded-xl bg-slate-900 p-3" + " " + className}>
-            <SyntaxHighlighter language="typescript" style={atomOneDark} customStyle={{
-                backgroundColor: "rgb(15 23 42 / var(--tw-bg-opacity))",
-                fontSize: "14px",
-                width: "100%",
-                overflowX: "auto",
-                overflowY: "scroll",
-            }}>
-                {code}
-            </ SyntaxHighlighter>
-        </div >
+        <>
+            <div className={className}>
+                {/* <div className='p-1 mt-1 bg-slate-200'>{fileName}</div> */}
+                <div className={"rounded-xl bg-slate-900 p-3" + " " + className}>
+                    <SyntaxHighlighter language="typescript" style={atomOneDark} customStyle={{
+                        backgroundColor: "rgb(15 23 42 / var(--tw-bg-opacity))",
+                        fontSize: "14px",
+                        width: "100%",
+                        overflowX: "auto",
+                        overflowY: "scroll",
+                    }}>
+                        {code}
+                    </ SyntaxHighlighter>
+                </div >
+            </div>
+        </>
     )
 }

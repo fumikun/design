@@ -29,10 +29,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={notoSansJP.variable + " " + rubik.variable}>
-        <div className='flex w-screen'>
+      <body className={notoSansJP.variable + " w-screen " + rubik.variable}>
+        <div className='flex'>
           <Sidebar />
-          <div className='p-6 bg-slate-100 max-w-fit min-w-0 flex flex-col'>
+          <div className='p-6 bg-slate-100 max-w-fit min-w-0 flex flex-col min-h-screen'>
             {children}
           </div>
         </div>

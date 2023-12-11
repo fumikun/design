@@ -14,7 +14,7 @@ const Sidebar = ({ className }: SidebarProps) => {
         <div className={"bg-white min-h-screen min-w-fit p-3 w-max flex-none" + " " + className}>
             <div className="flex items-center">
                 <Image src={logo} width={50} height={50} alt="" className="p-1 bg-slate-50 rounded-lg shadow" />
-                <div className="text-xl ms-3 text-slate-900">Console</div>
+                <div className="text-xl ms-3 text-slate-900">Designs</div>
             </div>
             <div className="mt-6 w-full">
                 <SidebarItem Icon={HiOutlineHome} href={"/"} name={"Home"} />

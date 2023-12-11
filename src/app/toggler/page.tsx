@@ -11,8 +11,7 @@ const BroadCastPage = () => {
                 <PreviwBox className="from-cyan-300 to-blue-500 flex-none">
                     <TogglerSample />
                 </PreviwBox>
-
-                <CodeBox code={code} className="mt-6" />
+                <CodeBox code={code} className="mt-6" fileName="toggle.tsx" />
             </div>
         </>
     )
