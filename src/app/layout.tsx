@@ -18,8 +18,8 @@ const rubik = Rubik({
 })
 
 export const metadata: Metadata = {
-  title: 'myconsole Console',
-  description: 'myconsole Contol Panel',
+  title: 'My design',
+  description: 'My favorite designs',
 }
 
 export default function RootLayout({
@@ -32,7 +32,7 @@ export default function RootLayout({
       <body className={notoSansJP.variable + " " + rubik.variable}>
         <div className='flex w-screen'>
           <Sidebar />
-          <div className='p-6 bg-slate-100 w-full'>
+          <div className='p-6 bg-slate-100 max-w-fit min-w-0 flex flex-col'>
             {children}
           </div>
         </div>

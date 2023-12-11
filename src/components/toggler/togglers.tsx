@@ -1,8 +1,8 @@
 "use client";
-import Toggle from "../utils/toggle";
+import Toggle from "./toggle";
 import { useState } from "react";
 
-export const BroadcastSelector = () => {
+export const TogglerSample = () => {
     const [enabled, setEnabled] = useState(false);
     const [enabled2, setEnabled2] = useState(false);
     const [enabled3, setEnabled3] = useState(false);
@@ -11,12 +11,6 @@ export const BroadcastSelector = () => {
             <div className="flex gap-3">
                 <div className="rounded-lg p-3 bg-white shadow flex gap-3 items-center">
                     <BroadcastSelectorToggleButton enabled={enabled} setEnabled={setEnabled} name="Toggler" />
-                </div>
-                <div className="rounded-lg p-3 bg-white shadow flex gap-3 items-center">
-                    <BroadcastSelectorToggleButton enabled={enabled2} setEnabled={setEnabled2} name="Toggler" />
-                </div>
-                <div className="rounded-lg p-3 bg-white shadow flex gap-3 items-center">
-                    <BroadcastSelectorToggleButton enabled={enabled3} setEnabled={setEnabled3} name="Toggler" />
                 </div>
             </div>
         </>
